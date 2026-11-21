@@ -408,7 +408,6 @@ img {
     font-weight: bold;
 }
 
-/* ===== Уход ===== */
 
 .main--care {
     display: flex;
@@ -442,7 +441,6 @@ img {
     font-weight: bold;
 }
 
-/* ===== Контакты и форма ===== */
 
 .main--contacts {
     display: flex;
@@ -596,7 +594,6 @@ img {
     background-color: var(--color-success-bg);
 }
 
-/* ===== Общие блоки ===== */
 
 .vk-block {
     padding: var(--space-lg);
@@ -639,7 +636,6 @@ img {
     color: var(--color-footer-text);
 }
 
-/* ===== Адаптивность ===== */
 
 @media (max-width: 760px) {
     .header {
@@ -660,9 +656,6 @@ img {
         padding: var(--space-md);
     }
 }
-/* ===== Дополнительные анимации для внутренних страниц ===== */
-
-/* ---------- Каталог: появление карточек и зум фото ---------- */
 
 @keyframes card-enter {
     from {
@@ -706,8 +699,6 @@ img {
     filter: brightness(1.05);
 }
 
-
-/* ---------- Уход: появление пунктов и пульсация выделения ---------- */
 
 @keyframes list-item-enter {
     from {
@@ -778,8 +769,6 @@ img {
     animation: title-underline 0.8s ease forwards;
 }
 
-
-/* ---------- Контакты: появление формы, блеск кнопки, всплытие статуса ---------- */
 
 @keyframes form-enter {
     from {
