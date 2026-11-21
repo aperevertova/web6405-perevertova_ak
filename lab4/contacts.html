@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты и заказ — Цветочная мастерская «ByKot»</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__logo logo">
+            <img class="logo__image" src="images/logo.jpg" alt="Логотип цветочной мастерской «ByKot»">
+            <span class="logo__text">Цветочная мастерская «ByKot»</span>
+        </div>
+        <nav class="nav" aria-label="Основная навигация">
+            <a href="index.html" class="nav__link">Главная</a>
+            <a href="catalog.html" class="nav__link">Каталог</a>
+            <a href="care.html" class="nav__link">Уход</a>
+            <a href="contacts.html" class="nav__link nav__link--active">Контакты</a>
+        </nav>
+    </header>
+
+    <main class="main main--contacts">
+        <h1 class="page-title">Контакты и заказ</h1>
+
+        <section class="contacts" aria-labelledby="contacts-title">
+            <h2 class="contacts__title" id="contacts-title">Как с нами связаться</h2>
+            <ul class="contacts__list">
+                <li class="contacts__item">
+                    ВКонтакте (основной канал):
+                    <a href="https://vk.ru/bykotflowers" target="_blank">vk.ru/bykotflowers</a>
+                </li>
+                <li class="contacts__item">Телефон: <a href="tel:+79990000000">+7 (999) 000-00-00</a></li>
+                <li class="contacts__item">Email: <a href="mailto:info@bykot.ru">info@bykot.ru</a></li>
+                <li class="contacts__item">Адрес: г. Самара</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="work-title">
+            <h2 class="contacts__title" id="work-title">Режим работы</h2>
+            <table class="work-table">
+                <tr>
+                    <th>День</th>
+                    <th>Время</th>
+                </tr>
+                <tr>
+                    <td>Понедельник – Пятница</td>
+                    <td>09:00 – 20:00</td>
+                </tr>
+                <tr>
+                    <td>Суббота – Воскресенье</td>
+                    <td>10:00 – 18:00</td>
+                </tr>
+            </table>
+        </section>
+
+        <section aria-labelledby="order-title">
+            <h2 class="contacts__title" id="order-title">Оформить заказ</h2>
+
+            <form class="order-form" id="orderForm" action="#" method="post" novalidate>
+                <div class="form__field">
+                    <label class="form__label" for="name">Имя</label>
+                    <input class="form__input" id="name" name="name" type="text"
+                           placeholder="Анна" autocomplete="name">
+                    <span class="form__error" data-error-for="name" aria-live="polite"></span>
+                </div>
+
+                <div class="form__field">
+                    <label class="form__label" for="phone">Телефон</label>
+                    <input class="form__input" id="phone" name="phone" type="tel"
+                           placeholder="+7 (999) 000-00-00" autocomplete="tel">
+                    <span class="form__error" data-error-for="phone" aria-live="polite"></span>
+                </div>
+
+                <div class="form__field">
+                    <label class="form__label" for="email">Email</label>
+                    <input class="form__input" id="email" name="email" type="email"
+                           placeholder="you@example.com" autocomplete="email">
+                    <span class="form__error" data-error-for="email" aria-live="polite"></span>
+                </div>
+
+                <div class="form__field">
+                    <label class="form__label" for="deliveryDate">Дата доставки</label>
+                    <input class="form__input" id="deliveryDate" name="deliveryDate" type="date">
+                    <span class="form__error" data-error-for="deliveryDate" aria-live="polite"></span>
+                </div>
+
+                <div class="form__field">
+                    <label class="form__label" for="quantity">Количество букетов</label>
+                    <input class="form__input" id="quantity" name="quantity" type="number"
+                           min="1" max="99" step="1" placeholder="1">
+                    <span class="form__error" data-error-for="quantity" aria-live="polite"></span>
+                </div>
+
+                <div class="form__field">
+                    <label class="form__label" for="budget">Бюджет, ₽</label>
+                    <input class="form__input" id="budget" name="budget" type="number"
+                           min="1" max="100000" step="1" placeholder="5000">
+                    <span class="form__error" data-error-for="budget" aria-live="polite"></span>
+                </div>
+
+                <div class="form__field">
+                    <label class="form__label" for="bouquet">Тип букета</label>
+                    <select class="form__select" id="bouquet" name="bouquet">
+                        <option value="">Выберите букет</option>
+                        <option value="Розы">Розы</option>
+                        <option value="Пионы">Пионы</option>
+                        <option value="Хризантемы">Хризантемы</option>
+                        <option value="Микс">Микс</option>
+                    </select>
+                    <span class="form__error" data-error-for="bouquet" aria-live="polite"></span>
+                </div>
+
+                <div class="form__field">
+                    <span class="form__label">Способ получения</span>
+                    <div class="form__radio-group">
+                        <label class="form__radio">
+                            <input type="radio" name="delivery" value="Самовывоз" checked>
+                            Самовывоз
+                        </label>
+                        <label class="form__radio">
+                            <input type="radio" name="delivery" value="Доставка">
+                            Доставка
+                        </label>
+                    </div>
+                    <span class="form__error" data-error-for="delivery" aria-live="polite"></span>
+                </div>
+
+                <div class="form__field">
+                    <label class="form__label" for="comment">Комментарий</label>
+                    <textarea class="form__textarea" id="comment" name="comment"
+                              maxlength="300" placeholder="Пожелания к букету или доставке"></textarea>
+                    <span class="form__error" data-error-for="comment" aria-live="polite"></span>
+                </div>
+
+                <label class="form__checkbox">
+                    <input id="consent" name="consent" type="checkbox">
+                    <span>Согласен на обработку персональных данных</span>
+                </label>
+                <span class="form__error" data-error-for="consent" aria-live="polite"></span>
+
+                <button class="button button--primary order-form__submit" type="submit">
+                    Отправить данные
+                </button>
+
+                <p class="form__status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="vk-block">
+            <h2 class="vk-block__title">Быстрее всего — во ВКонтакте</h2>
+            <p class="vk-block__text">
+                Мы оперативно отвечаем в личных сообщениях группы
+                <a href="https://vk.ru/bykotflowers" target="_blank">vk.ru/bykotflowers</a>.
+                Пишите — поможем выбрать букет и оформить доставку.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2025 Цветочная мастерская «ByKot».</p>
+        <p class="footer__text">
+            Мы во ВКонтакте:
+            <a class="footer__link" href="https://vk.ru/bykotflowers" target="_blank">vk.ru/bykotflowers</a>
+        </p>
+    </footer>
+
+</body>
+</html>

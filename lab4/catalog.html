@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — Цветочная мастерская «ByKot»</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__logo logo">
+            <img class="logo__image" src="images/logo.jpg" alt="Логотип цветочной мастерской «ByKot»">
+            <span class="logo__text">Цветочная мастерская «ByKot»</span>
+        </div>
+        <nav class="nav" aria-label="Основная навигация">
+            <a href="index.html" class="nav__link">Главная</a>
+            <a href="catalog.html" class="nav__link nav__link--active">Каталог</a>
+            <a href="care.html" class="nav__link">Уход</a>
+            <a href="contacts.html" class="nav__link">Контакты</a>
+        </nav>
+    </header>
+
+    <main class="main main--catalog">
+        <h1 class="page-title">Каталог букетов</h1>
+        <p class="catalog__intro">
+            В нашем каталоге представлены готовые композиции.
+            Все цены указаны в рублях. Актуальные букеты и новые поступления
+            смотрите в нашей группе
+            <a href="https://vk.ru/bykotflowers" target="_blank">vk.ru/bykotflowers</a>.
+        </p>
+
+        <section class="catalog" aria-labelledby="catalog-title">
+            <h2 class="catalog__title" id="catalog-title">Готовые композиции</h2>
+
+            <div class="catalog__grid">
+                <article class="bouquet-card">
+                    <img src="images/bouquet1.jpg" alt="Букет «Hello Kitty»" class="bouquet-card__image">
+                    <div class="bouquet-card__body">
+                        <h3 class="bouquet-card__title">«Hello Kitty»</h3>
+                        <p class="bouquet-card__composition">Розы, диантусы, гипсофилла</p>
+                        <p class="bouquet-card__price">6000 ₽</p>
+                    </div>
+                </article>
+
+                <article class="bouquet-card">
+                    <img src="images/bouquet2.jpg" alt="Букет «Стипендии хватит»" class="bouquet-card__image">
+                    <div class="bouquet-card__body">
+                        <h3 class="bouquet-card__title">«Стипендии хватит»</h3>
+                        <p class="bouquet-card__composition">Хризантемы</p>
+                        <p class="bouquet-card__price">3200 ₽</p>
+                    </div>
+                </article>
+
+                <article class="bouquet-card">
+                    <img src="images/bouquet3.jpg" alt="Букет «Базовый минимум»" class="bouquet-card__image">
+                    <div class="bouquet-card__body">
+                        <h3 class="bouquet-card__title">«Базовый минимум»</h3>
+                        <p class="bouquet-card__composition">Диантусы, эвкалипт</p>
+                        <p class="bouquet-card__price">1100 ₽</p>
+                    </div>
+                </article>
+
+                <article class="bouquet-card">
+                    <img src="images/bouquet4.jpg" alt="Букет «Розочки»" class="bouquet-card__image">
+                    <div class="bouquet-card__body">
+                        <h3 class="bouquet-card__title">«Розочки»</h3>
+                        <p class="bouquet-card__composition">Розы, эвкалипт</p>
+                        <p class="bouquet-card__price">4200 ₽</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="vk-block">
+            <h2 class="vk-block__title">Больше букетов — во ВКонтакте</h2>
+            <p class="vk-block__text">
+                В группе <a href="https://vk.ru/bykotflowers" target="_blank">vk.ru/bykotflowers</a>
+                мы публикуем новые композиции, акции и сезонные предложения.
+                Там же можно оформить заказ в личных сообщениях.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2025 Цветочная мастерская «ByKot».</p>
+        <p class="footer__text">
+            Мы во ВКонтакте:
+            <a class="footer__link" href="https://vk.ru/bykotflowers" target="_blank">vk.ru/bykotflowers</a>
+        </p>
+    </footer>
+
+</body>
+</html>
